@@ -5,11 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 
 <body>
-    <!-- Second Half Of Page -->
+    <section class="newRecipes">
+<div class="carousel" data-flickity='{ "autoPlay": true }'>
+    <div class="carousel-cell"></div>
+    <div class="carousel-cell"></div>
+    <div class="carousel-cell"></div>
+    <div class="carousel-cell"></div>
+    <div class="carousel-cell"></div>
+</div>
+
+    </section>
+
     <section class="popularFood">
         <artile class="title">
             <h2>Popular Food</h2>
@@ -46,6 +57,7 @@
 
     </section>
 </body>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="./assets/script.js"></script>
 
 </html>
