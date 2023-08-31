@@ -22,20 +22,10 @@ section {
 }
 /* external css: flickity.css */
 .carousel-cell {
-    width: 50%;
-    height: 200px;
+    width: 60%;
+    height: 250px;
     margin-right: 10px;
     background: gray;
-    border-radius: 5px;
+    border-radius: 10px;
     counter-increment: carousel-cell;
-}
-
-/* cell number */
-.carousel-cell:before {
-    display: block;
-    text-align: center;
-    content: counter(carousel-cell);
-    line-height: 200px;
-    font-size: 80px;
-    color: white;
 }
