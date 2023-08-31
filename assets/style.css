@@ -1,54 +1,9 @@
-.container-grid {
-    display: grid;
-    grid-template: 200px 200px/200px 200px 200px 200px;
-    margin-left: auto;
-        margin-right: auto;
-        width: 1024px;
-}
-
-.container-grid div {
-    background-color: black;
-    margin: 5%;
-
-}
-
-section {
-    margin: 10% auto;
-}
-
-.title,
-.content {
-    text-align: center;
-}
-/* external css: flickity.css */
-.carousel-cell {
-    width: 50%;
-    height: 200px;
-    margin-right: 10px;
-    background: gray;
-    border-radius: 5px;
-    counter-increment: carousel-cell;
-}
-
-/* cell number */
-.carousel-cell:before {
-    display: block;
-    text-align: center;
-    content: counter(carousel-cell);
-    line-height: 200px;
-    font-size: 80px;
-    color: white;
-}
 html {
     background-image: linear-gradient(#FC5E55, #FA4083);
 }
 
 body {
-<<<<<<< HEAD
     background-position: top center; 
-=======
-    background-position: top center;
->>>>>>> 7a6e70c86b4d4460d20b64379a7e9843201f8ef3
     background-repeat: no-repeat;
     font-family: 'Roboto', sans-serif;
     color: white;
@@ -96,7 +51,6 @@ main {
 
 #footer-heading {
     color: white;
-<<<<<<< HEAD
   }
 
   .footer-bottom {
@@ -104,35 +58,19 @@ main {
   }
   
   footer {
-=======
-}
-
-.footer-bottom {
-    color: white;
-}
-
-footer {
->>>>>>> 7a6e70c86b4d4460d20b64379a7e9843201f8ef3
     padding-top: 40px;
     background-color: gray;
     height: 200px;
     text-align: center;
-<<<<<<< HEAD
   }
   
   .fa {
-=======
-}
-
-.fa {
->>>>>>> 7a6e70c86b4d4460d20b64379a7e9843201f8ef3
     padding: 20px;
     font-size: 30px;
     width: 20px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
-<<<<<<< HEAD
   }
   
   .fa:hover {
@@ -150,22 +88,3 @@ footer {
   .fa-instagram {
     color: white;
   }
-=======
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-    color: white;
-}
-
-.fa-twitter {
-    color: white;
-}
-
-.fa-instagram {
-    color: white;
-}
->>>>>>> 7a6e70c86b4d4460d20b64379a7e9843201f8ef3
