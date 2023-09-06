@@ -1,6 +1,7 @@
 const grid = document.querySelector('.popularFood')
 const full=document.querySelector('.fullscreen')
 
+// the api call
 async function recipeCall(appendTo) {
     const randomId = 52764 + Math.floor(Math.random() * 235) 
 
@@ -9,7 +10,6 @@ async function recipeCall(appendTo) {
     try {
         const response = await fetch(url);
         const data = await response.json();
-        console.log(data)
         const meal = data.meals[0];
         //Meal image
         const mealImage = meal.strMealThumb;
@@ -49,16 +49,48 @@ async function recipeCall(appendTo) {
     }
 }
 
+
+
+
+
+// recicipe call on each image
 const contentImg = document.querySelectorAll('.content-img');
+const escImg=document.querySelector('.escImg')
 contentImg.forEach(element => {
     recipeCall(element);
     element.addEventListener('click',()=>{
         grid.style.display='none'
-        full.style.display='grid '
+        escImg.style.display='block'
+        full.style.display='grid'
         fullScreen(element)
+        
+        let clicked=true;
+        const recipeSpan = document.querySelector('.recipeSpan img')
+        const instruct = document.querySelector('.instruct')
+        recipeSpan.addEventListener('click',()=>{     
+            if(clicked){
+                instruct.style.display = 'none'
+                split()   
+                clicked = false;
+            }
+            else{
+                instruct.style.display = '' 
+                const instructFull = document.querySelector('.instructFull')
+                instructFull.innerHTML=''
+                clicked=true;
+            }
+
+        })
+
+        escImg.addEventListener('click',()=>{
+            grid.style.display = 'block'
+            escImg.style.display = 'none'
+            full.style.display = 'none'
+        })
     })
 });
 
+// veiw the content of each image
 function fullScreen(element){
     const thumb=document.querySelector('.thumbNail')
     const name=document.querySelector('.name')
@@ -85,3 +117,32 @@ function fullScreen(element){
     }
 }
 
+function split(){
+    const instruct = document.querySelector('.instruct').textContent
+    const instructFull=document.querySelector('.instructFull')
+    
+    const result = instruct.match(/[^\.!\?]+[\.!\?]+/g);
+    result.forEach(element=>{
+        const div = document.createElement('div')
+
+        const check=document.createElement('input')
+        check.type='checkbox'
+        check.addEventListener('change', function () {
+            if (this.checked) {
+                instructLi.style.textDecoration = 'line-through';
+                instructLi.style.textDecorationColor = 'green';
+            } else {
+                instructLi.style.textDecoration = 'none';
+            }
+        });
+
+        const instructLi=document.createElement('li')
+        instructLi.textContent=element
+
+        div.appendChild(check)
+        div.appendChild(instructLi)
+
+        instructFull.appendChild(div)
+    })
+    
+}  
