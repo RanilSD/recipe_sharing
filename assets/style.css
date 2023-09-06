@@ -1,182 +1,389 @@
 html {
-    background-image: linear-gradient(#FC5E55, #FA4083);
-}
-
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-
-.container {
-    width: 1024px;
-    min-height: 300px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid lightgrey;
-}
-
-.navbutton {
-    border: 1px solid white;
-    padding: 11px 25px;
-    font-family: 'Playfair Display', serif;
-    display: inline-block;
-    position: relative;
-}
-
-main {
-    min-height: 300px;
-    display: flex;
-    align-items: center;
-}
-
-.footer-social a {
-    color: white;
-}
-
-#footer-heading {
-    color: white;
-  }
-
-  .footer-bottom {
-    color: white;
-  }
-  
-  footer {
-    padding-top: 40px;
-    background-color: gray;
-    height: 200px;
-    text-align: center;
-  }
-  
-  .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 20px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-  }
-  
-  .fa:hover {
-    opacity: 0.7;
-  }
-  
-  .fa-facebook {
-    color: white;
-  }
-  
-  .fa-twitter {
-    color: white;
-  }
-  
-  .fa-instagram {
-    color: white;
-
-  }
-
-html {
-    background-image: linear-gradient(#FC5E55, #FA4083);
+    background-image: linear-gradient(lightgrey);
 }
 
 body {
     background-position: top center;
     background-repeat: no-repeat;
     font-family: 'Roboto', sans-serif;
-    color: white;
+    color: black;
     font-size: 1.125rem;
 }
 
-a {
-    color: white;
-    text-decoration: none;
-}
-
+/* Header Container */
 
 .container {
     width: 1024px;
-    min-height: 300px;
-    margin-left: auto;
-    margin-right: auto;
+     margin-right: auto;
+    
 }
+    img {
+        margin-left: 15%;
+    }
 
-header {
-    display: flex;
-    align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid lightgrey;
-}
+    header {
+        z-index: 1;
+        position: relative;
+        right: 50px;
+        bottom: 600px;
+        display: flex;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid lightgrey;
+        justify-content: center;
+    }
 
-.navbutton {
-    border: 1px solid white;
-    padding: 11px 25px;
-    font-family: 'Playfair Display', serif;
-    display: inline-block;
-    position: relative;
-}
+    .navbutton {
+        padding: 11px 25px;
+        font-family: 'Playfair Display', serif;
+        display: inline-block;
+        position: relative;
+    }
 
-main {
-    min-height: 300px;
-    display: flex;
-    align-items: center;
-}
+    a {
+        color: white;
+        text-decoration: none;
+    }
 
-.footer-social a {
-    color: white;
-}
+    h1 {
+        color: rgba(0, 0, 0, 1);
+    }
 
-#footer-heading {
-    color: white;
-}
+    /* Main Section */
 
-.footer-bottom {
-    color: white;
-}
+    main {
+        min-height: 300px;
+        display: flex;
+        align-items: center;
+    }
 
-footer {
-    padding-top: 40px;
-    background-color: gray;
-    height: 200px;
-    text-align: center;
-}
+    /* Scrolling Yellow Container */
 
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 20px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-}
+    .card-container {
+        background-color: rgba(254, 207, 7, 1);
+        border-radius: 25px 25px 25px 25px;
+        width: 1024px;
+        height: 200px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 80px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-.fa:hover {
-    opacity: 0.7;
-}
+    .card1 {
+        background-color: white;
+        width: 180px;
+        height: 180px;
+        border-radius: 15px 15px 15px 15px;
+    }
 
-.fa-facebook {
-    color: white;
-}
+    .card2 {
+        background-color: white;
+        width: 180px;
+        height: 180px;
+        border-radius: 15px 15px 15px 15px;
+    }
 
-.fa-twitter {
-    color: white;
-}
+    .card3 {
+        background-color: white;
+        width: 180px;
+        height: 180px;
+        border-radius: 15px 15px 15px 15px;
+    }
 
-.fa-instagram {
-    color: white;
-}
+    .card4 {
+        background-color: white;
+        width: 180px;
+        height: 180px;
+        border-radius: 15px 15px 15px 15px;
+    }
 
+    .card5 {
+        background-color: white;
+        width: 180px;
+        height: 180px;
+        border-radius: 15px 15px 15px 15px;
+    }
+
+    /* Photos in scrolling container */
+
+    .pcard1 {
+        width: 150px;
+        height: 100px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        cursor: pointer;
+    }
+
+    .pcard2 {
+        width: 150px;
+        height: 100px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        cursor: pointer;
+    }
+
+    .pcard3 {
+        width: 150px;
+        height: 100px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        cursor: pointer;
+    }
+
+    .pcard4 {
+        width: 150px;
+        height: 100px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        cursor: pointer;
+    }
+
+    .pcard5 {
+        width: 150px;
+        height: 100px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        cursor: pointer;
+    }
+
+    /* Text Description in scrolling container */
+
+    .tcard1 {
+        width: 80px;
+        height: 30px;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .tcard2 {
+        width: 80px;
+        height: 30px;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .tcard3 {
+        width: 80px;
+        height: 30px;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .tcard4 {
+        width: 80px;
+        height: 30px;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .tcard5 {
+        width: 80px;
+        height: 30px;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    /* Left & Right arrows in Scrolling Container */
+
+    .scroll-arrow-left {
+        margin-right: 10px;
+        width: 25px;
+        height: 25px;
+        background-color: white;
+        color: black;
+        border-radius: 50%;
+        font-size: 12px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        cursor: pointer;
+    }
+
+    .scroll-arrow-right {
+        margin-left: 10px;
+        width: 25px;
+        height: 25px;
+        background-color: white;
+        color: black;
+        border-radius: 50%;
+        font-size: 12px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        cursor: pointer;
+    }
+
+    /* Review Section */
+
+    .reviews {
+        justify-content: space-between;
+        background-color: black;
+    }
+
+    .testimonial-photo-section {
+        height: 600px;
+        width: 600px;
+        background-color: black;
+        display: inline-block;
+        position: relative;
+        margin-left: 200px;
+        padding-top: 30px;
+
+    }
+
+    .testimonial-text-section {
+        height: 300px;
+        min-width: 500px;
+        background-color: black;
+        display: inline-block;
+        position: relative;
+        margin-left: 100px;
+        bottom: 300px;
+        padding-bottom: 300px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .testimonial-text-section span {
+        font-size: 20px;
+        color: rgba(254, 207, 7, 1);
+    }
+
+    .testimonial-text-section p {
+        font-size: 15px;
+        color: white;
+    }
+
+    .reviews h2 {
+        color: rgba(254, 207, 7, 1);
+        text-align: center;
+        padding-top: 40px;
+        font-size: 50px;
+
+    }
+
+    /* Basic styling for the container and sliding div */
+    .slide-container {
+        width: 400px;
+        min-height: 150px;
+        overflow: hidden;
+        /* Hide overflowing content */
+        position: relative;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 50px;
+    }
+
+
+    .sliding-div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+
+    .current {
+        transform: translateX(0);
+        /* Start with the first div visible */
+        display: block;
+    }
+
+    /* Footer Section */
+
+    .footer-social a {
+        color: black;
+    }
+
+    #footer-heading {
+        color: black;
+    }
+
+    .footer-bottom {
+        color: black;
+    }
+
+    footer {
+        padding-top: 40px;
+        background-color: rgba(254, 207, 7, 1);
+        height: 200px;
+        text-align: center;
+    }
+
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 20px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    .fa-facebook {
+        color: black;
+    }
+
+    .fa-twitter {
+        color: black;
+    }
+
+    .fa-instagram {
+        color: black;
+    }
 
 
     /* just incase of conflict */
+
+         .container-grid div {
+             background-color: white;
+             margin: 5%;
+             background-position: top center;
+             background-repeat: no-repeat;
+             font-family: 'Roboto', sans-serif;
+             color: white;
+             font-size: 1.125rem;
+         }
+
     .content-img {
         width: 100%;
         height: 100%;
@@ -295,39 +502,13 @@ footer {
 
         }
 
-
-
-
-        .container-grid div {
-
-            background-color: black;
-
-            margin: 5%;
-
-
-
-
-        }
-
-
-
-
         section {
-
             margin: 10% auto;
-
         }
 
-
-
-
-        .title,
-
+        .title
         .content {
-
-            text-align: center;
-
-   
+            text-align: center
         }
 
       
