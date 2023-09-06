@@ -2,13 +2,6 @@ html {
     background-image: linear-gradient(#FC5E55, #FA4083);
 }
 
-body {
-    background-position: top center; 
-    background-repeat: no-repeat;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-size: 1.125rem;
-}
 
 a {
     color: white;
@@ -181,70 +174,3 @@ footer {
     color: white;
 }
 
-/* No Merege Conflicts */
-/* external css: flickity.css */
-.carousel-cell {
-    width: 50%;
-    height: 200px;
-    margin-right: 10px;
-    background: gray;
-    border-radius: 5px;
-    counter-increment: carousel-cell;
-}
-
-/* cell number */
-.carousel-cell:before {
-    display: block;
-    text-align: center;
-    content: counter(carousel-cell);
-    line-height: 200px;
-    font-size: 80px;
-    color: white;
-}
-.container-grid {
-
-    display: grid;
-
-    grid-template: 200px 200px/200px 200px 200px 200px;
-
-    margin-left: auto;
-
-    margin-right: auto;
-
-    width: 1024px;
-
-}
-
-
-
-
-.container-grid div {
-
-    background-color: black;
-
-    margin: 5%;
-
-
-
-
-}
-
-
-
-
-section {
-
-    margin: 10% auto;
-
-}
-
-
-
-
-.title,
-
-.content {
-
-    text-align: center;
-
-}
