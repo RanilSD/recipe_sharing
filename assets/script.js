@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const grid = document.querySelector('.popularFood')
 const full=document.querySelector('.fullscreen')
 
@@ -148,6 +149,8 @@ function split(){
 }  
 
 
+=======
+>>>>>>> 2c91537 (adding files)
 const slides = document.querySelectorAll('.sliding-div');
 let currentIndex = 0;
 
@@ -162,7 +165,11 @@ function showSlide(index) {
 }
 
 
+<<<<<<< HEAD
 var setTestimonial = setInterval(function () {
+=======
+var setTestimonial = setInterval(function() {
+>>>>>>> 2c91537 (adding files)
     if (currentIndex < slides.length - 1) {
         currentIndex++;
     }
@@ -170,7 +177,11 @@ var setTestimonial = setInterval(function () {
         currentIndex = 0;
     }
     showSlide(currentIndex);
+<<<<<<< HEAD
 }, 5000);
+=======
+    }, 5000);
+>>>>>>> 2c91537 (adding files)
 
 const prevBtn = document.getElementById("left-arrow");
 const nextBtn = document.getElementById("right-arrow");
@@ -181,16 +192,28 @@ const cardContent4 = document.querySelector(".card4");
 const cardContent5 = document.querySelector(".card5");
 
 const contentArray = [
+<<<<<<< HEAD
     { desc: "Chicken <br> Cheese Salad" },
     { desc: "Chicken <br> Cheese Salad" },
     { desc: "Chicken <br> Cheese Salad" },
     { desc: "Chicken <br> Cheese Salad" },
     { desc: "Chicken <br> Cheese Salad" }
+=======
+    {desc:"Chicken <br> Cheese Salad"},
+    {desc:"Chicken <br> Cheese Salad"},
+    {desc:"Chicken <br> Cheese Salad"},
+    {desc:"Chicken <br> Cheese Salad"},
+    {desc:"Chicken <br> Cheese Salad"}
+>>>>>>> 2c91537 (adding files)
 ]
 
 let curIndex = 0;
 function updateCardContent(cardNumber) {
+<<<<<<< HEAD
     const { desc } = contentArray[curIndex];
+=======
+    const {desc} = contentArray[curIndex];
+>>>>>>> 2c91537 (adding files)
     var cardSelector = document.querrySelector(".card" + cardNumber);
     cardSelector.innerHTML = `
     <div class="pcard${cardNumber}">
@@ -198,4 +221,8 @@ function updateCardContent(cardNumber) {
 </div>
 <div class="tcard${cardNumber}">${desc}</div>
     `;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 2c91537 (adding files)
