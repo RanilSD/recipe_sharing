@@ -54,12 +54,12 @@ function createContent(results) {
             searchHistoryEl.innerHTML = "";
             var searchHistory = JSON.parse(localStorage.getItem(history)) || [];
             for (var i = 0; i < history.length; i++) {
-                var cityList = document.createElement("button");
-                cityList.classList.add("search");
-                cityList.textContent = `${history[i]}`;
-                cityList.setAttribute("data-index", i);
-                searchHistoryEl.prepend(cityList);
-                cityList.addEventListener("click", function () {
+                var foodSearchListList = document.createElement("button");
+                foodSearchList.classList.add("search");
+                foodSearchList.textContent = `${history[i]}`;
+                foodSearchList.setAttribute("data-index", i);
+                searchHistoryEl.prepend(foodSearchList);
+                foodSearchList.addEventListener("click", function () {
                     searchApi(this.textContent);
                 }, false);
             }
