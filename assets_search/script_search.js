@@ -3,19 +3,12 @@ var searchResult = document.querySelector('.search');
 var container = document.querySelector('.container');
 let userQuery = '';
 
-let i = 0;
-let speed = 100;
 
-function typeWriter() {
-    if (i < txt.length) {
-        document.getElementById("intro-text").innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
-    }
-}
 
 var ID = '9f670c22';
 var KEY = 'caba1f8a7e18bad86b2babf5a09611bb';
+
+
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -50,6 +43,42 @@ function createContent(results) {
     </div>
         `
     })
+
+    function renderStorage() {
+        var history = JSON.parse(localStorage.getItem('past-searches')) || [];
+        console.log(history);
+        if (history.length === 0) {
+            return;
+        } else {
+            var searchHistoryEl = document.querySelector("#search_history");
+            searchHistoryEl.innerHTML = "";
+            var searchHistory = JSON.parse(localStorage.getItem(history)) || [];
+            for (var i = 0; i < history.length; i++) {
+                var cityList = document.createElement("button");
+                cityList.classList.add("search");
+                cityList.textContent = `${history[i]}`;
+                cityList.setAttribute("data-index", i);
+                searchHistoryEl.prepend(cityList);
+                cityList.addEventListener("click", function () {
+                    searchApi(this.textContent);
+                }, false);
+            }
+        }
+    }
+
+
+    function saveToStorage(foodSearch) {
+        var history = JSON.parse(localStorage.getItem('past-searches')) || [];
+        if (!history.includes(foodSearch)) {
+            history.push(foodSearch);
+            if (history.length > 5) {
+                history.shift();
+            }
+        }
+        localStorage.setItem('past-searches', JSON.stringify(history));
+        renderStorage();
+        show(horizontalLineEl);
+    }
 
     searchResult.innerHTML = initalContent;
 }
