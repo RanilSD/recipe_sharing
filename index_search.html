@@ -7,14 +7,14 @@
     <title>Recipe Search!!!</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <link rel="stylesheet" href="./assets_search/style_search.css">
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 <div class="container">
     <header>
         <nav>
 
             <div class="navbutton">
-                <a href="#">Home</a>
+                <a href="index.html">Home</a>
             </div>
 
             <div class="navbutton">
@@ -28,12 +28,14 @@
             <div class="container">
                 <h1 class="app-title">Recipe Search!!!</h1>
                 <form>
-                    <input type="text" value="" placeholder="Search any Food!!!">
+                    <input type="text" class="form-control" id="foodInput" placeholder="Search any Food!!!"
+                        aria-describedby="foodSearch">
                 </form>
                 <p id="intro-text"></p>
                 <div class="search"></div>
             </div>
         </section>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
         <script src="./assets_search/script_search.js"></script>
     </body>
 
