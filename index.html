@@ -12,24 +12,60 @@
 
 <body>
 
+        <!-- Header Image, Nav Buttons & Search bar  -->
+    <img src="Main-photo.png" alt="Main Photo">
     <div class="container">
+
         <header>
-            <nav>
-                <div class="navbutton">
-                    <a href="./index.html">Home</a>
-                </div>
-                <div class="navbutton">
-                    <a href="">About Us</a>
-                </div>
-            </nav>
-        </header>
-        <main>
-            <div class="herobox1">
-                <h1>Lorem ipsum dolor sit amet.</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, facilis.</p>
-            </div>
-        </main>
+        <div class="navbutton">
+            <a href="#">Home</a>
+        </div>
+
+        <div class="navbutton">
+            <a href="contact-us.html">About Us</a>
+        </div>
+
+        <div class="navbutton">
+            <a href="contact-us.html">Search Food</a>
+        </div>
+    </header>
+
     </div>
+
+
+
+        <!-- Main Section -->
+
+    <main>
+        <div class="herobox1">
+
+            <h1>Let's dive into the art of cooking together – one delicious recipe at a time.</h1>
+
+            <p>
+                Your ultimate destination for a world of delectable recipes! Whether you're a seasoned chef or a
+                culinary enthusiast looking to embark on a gastronomic adventure, our website is here to tantalize your
+                taste buds and inspire your culinary creations.
+                <br><br>
+                At Recipe Sharing, we believe that cooking is an art that knows no bounds. Our curated collection of
+                recipes spans a diverse range of cuisines, from mouthwatering appetizers to sumptuous main courses, and
+                from delightful desserts to refreshing beverages. No matter what your craving is – be it the comforting
+                embrace of classic comfort food, the bold flavors of international dishes, or the innovative twists that
+                elevate everyday ingredients – we've got you covered.
+                <br><br>
+                Our mission is to be your trusted companion in the kitchen. Our team of passionate food aficionados has
+                meticulously crafted and tested each recipe to ensure that they are not only easy to follow but also
+                yield spectacular results. Whether you're hosting a dinner party, preparing a family feast, or simply
+                indulging in some culinary experimentation, you'll find a recipe that suits every occasion and skill
+                level.
+                <br><br>
+                Join us on a culinary journey that celebrates the joy of cooking and sharing. Explore our treasure trove
+                of recipes, cooking tips, and techniques that will empower you to create culinary masterpieces that
+                leave a lasting impression. From novice cooks to seasoned pros, everyone is invited to savor the world
+                of flavors that [Your Website Name] brings to your kitchen.
+            </p>
+        </div>
+    </main>
+
     <section class="newRecipes">
         <div class="carousel" data-flickity='{ "autoPlay": true }'>
             <div class="carousel-cell"></div>
@@ -101,19 +137,69 @@
             </ul>
         </div>
     </div>
-    <footer>
-        <h4 id="footer-heading">Follow Us</h4>
-        <div class="footer-socail">
-            <a href="#" target="_blank" class="fa fa-facebook"></a>
-            <a href="#" target="_blank" class="fa fa-twitter"></a>
-            <a href="#" target="_blank" class="fa fa-instagram"></a>
 
+        <!-- Testimonial Sec -->
+
+    <div class="reviews">
+        <h2>A few words from our clients</h2>
+        <div class="testimonial-photo-section">
+            <img src="Expert-photo.png" alt="Review Photo">
         </div>
 
-        <div class="footer-bottom">
-            All rights reserved - Copyright 2023©
+        <div class="testimonial-text-section">
+
+            <div class="slide-container">
+
+                <div class="sliding-div current">
+                    <p><span>John Roberts</span> <br> Chef at Olive Garden</p>
+                    <p>"As a professional chef with years of experience in the culinary world, I must say that I'm
+                        thoroughly impressed with this Recipe Sharing website. It's a true culinary treasure trove for
+                        food enthusiasts, home cooks, and fellow chefs alike."</p>
+                </div>
+
+                <div class="sliding-div">
+                    <p><span>Chef Maria Rodriguez</span> <br> Chef at Quince</p>
+                    <p>"Recipe Sharing is a game-changer for the culinary community. It's not just a platform to
+                        exchange recipes; it's a hub of inspiration and creativity. As a chef, I'm thrilled to be part
+                        of this community, where I can share my expertise and learn from fellow culinary enthusiasts.
+                        Kudos to Recipe Sharing for bringing us all together!"</p>
+                </div>
+
+                <div class="sliding-div">
+                    <p><span>Chef Emily Chen</span> <br> Chef at Joe's</p>
+                    <p>"Recipe Sharing has been my go-to resource for culinary inspiration. Whether I'm looking for a
+                        classic recipe or experimenting with a new twist, I can always find what I need here. The
+                        diversity of cuisines and the passionate community make it a standout platform. I'm grateful for
+                        the connections I've made through this site."</p>
+                </div>
+            </div>
+
         </div>
-    </footer>
+    </div>
+
+            <!-- Footer Sec -->
+
+
+        <footer>
+            <h4 id="footer-heading">FOLLOW ME</h4>
+            <div class="footer-social">
+                <a href="#" target="_blank" class="fa fa-facebook"></a>
+                <a href="#" target="_blank" class="fa fa-twitter"></a>
+                <a href="#" target="_blank" class="fa fa-instagram"></a>
+                <br>
+                <br>
+            </div>
+
+            <div class="footer-bottom">
+                All rights reserved - Copyright 2023©
+
+            </div>
+
+        </footer>
+
+
+
+
 </body>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="./assets/script.js"></script>
