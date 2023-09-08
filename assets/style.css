@@ -12,14 +12,14 @@ body {
     margin-right: auto;
 }
 
-img {
-    margin-left: 15%;
+.basitImage {
+    margin-left: 25%;
 }
 
 header {
     z-index: 1;
     position: relative;
-    left: 385px;
+    left:700px;
     bottom: 600px;
     display: flex;
     align-items: center;
@@ -72,15 +72,17 @@ h2 {
 
 .container-grid {
     display: grid;
-    grid-template: 200px 200px/200px 200px 200px 200px;
+    grid-template: 500px 500px/500px 500px 500px 500px;
     margin-left: auto;
-        margin-right: auto;
-        width: 1024px;
+    margin-right: auto;
+    width: 1024px;
+    gap:10px
 }
 
 .container-grid div {
-    background-color:white;
-    margin: 5%;
+
+    background-color: white;
+
 }
 
 section {
@@ -124,6 +126,7 @@ section {
     grid-template: 20px 200px 200px/30% 70%;
     gap: 10px;
     width: fit-content;
+    height:400px;
     background-color: white;
     margin: 5% auto;
     padding: 5%;
@@ -161,18 +164,20 @@ section {
     margin: 1% 0;
 }
 
-.recipeSpan {
+#recipeSpan {
     display: flex;
     margin-bottom: 2%;
+
 }
 
-.recipeSpan img {
-    margin-left: 5%;
+
+#recipeSpan img {
+    margin-left: 1%;
     position: relative;
     top: 30px;
     width: 40px;
     height: 40px;
-}
+} 
 
 .instructFull div {
     display: flex;

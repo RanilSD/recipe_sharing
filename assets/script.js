@@ -38,11 +38,6 @@ async function recipeCall(appendTo) {
         console.error(error);
     }
 }
-
-
-
-
-
 // recicipe call on each image
 const contentImg = document.querySelectorAll('.content-img');
 const escImg = document.querySelector('.escImg')
@@ -55,7 +50,7 @@ contentImg.forEach(element => {
         fullScreen(element)
 
         let clicked = true;
-        const recipeSpan = document.querySelector('.recipeSpan img')
+        const recipeSpan = document.querySelector('#recipeSpan img')
         const instruct = document.querySelector('.instruct')
         recipeSpan.addEventListener('click', () => {
             if (clicked) {
