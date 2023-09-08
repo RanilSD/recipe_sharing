@@ -105,22 +105,12 @@ section {
 
 
 /* just incase of conflict */
-.content-img{
+.content-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.carousel-cell{
-    display:flex;
-}
-.carousel-cell p{
-  margin-left:80px
-}
-.carousel img{
-    width: 100%;
-        height: 100%;
-        object-fit: cover;
-}
+
 .fullscreen {
     color: black;
     display: none;
