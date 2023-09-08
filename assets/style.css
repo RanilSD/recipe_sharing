@@ -103,15 +103,6 @@ section {
     counter-increment: carousel-cell;
 }
 
-/* cell number */
-.carousel-cell:before {
-    display: block;
-    text-align: center;
-    content: counter(carousel-cell);
-    line-height: 200px;
-    font-size: 80px;
-    color: white;
-}
 
 /* just incase of conflict */
 .content-img {
@@ -209,15 +200,6 @@ section {
         counter-increment: carousel-cell;
     }
 
-    /* cell number */
-    .carousel-cell:before {
-        display: block;
-        text-align: center;
-        content: counter(carousel-cell);
-        line-height: 200px;
-        font-size: 80px;
-        color: white;
-    }
 
     .container-grid {
 
