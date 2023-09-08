@@ -103,23 +103,24 @@ section {
     counter-increment: carousel-cell;
 }
 
-/* cell number */
-.carousel-cell:before {
-    display: block;
-    text-align: center;
-    content: counter(carousel-cell);
-    line-height: 200px;
-    font-size: 80px;
-    color: white;
-}
 
 /* just incase of conflict */
-.content-img {
+.content-img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
+.carousel-cell{
+    display:flex;
+}
+.carousel-cell p{
+  margin-left:80px
+}
+.carousel img{
+    width: 100%;
+        height: 100%;
+        object-fit: cover;
+}
 .fullscreen {
     color: black;
     display: none;
@@ -209,15 +210,6 @@ section {
         counter-increment: carousel-cell;
     }
 
-    /* cell number */
-    .carousel-cell:before {
-        display: block;
-        text-align: center;
-        content: counter(carousel-cell);
-        line-height: 200px;
-        font-size: 80px;
-        color: white;
-    }
 
     .container-grid {
 
