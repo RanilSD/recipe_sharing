@@ -1,3 +1,9 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
 body {
     background-color: rgba(254, 207, 7, 1);
 }
@@ -13,7 +19,7 @@ header {
     width: 1024px;
     padding-top: 20px;
     padding-bottom: 20px;
-    border-bottom: 1px solid black;
+    border-bottom: 3px solid black;
     margin-left: auto;
     margin-right: auto;
 }
@@ -28,7 +34,7 @@ header {
 a {
     color: black;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 
@@ -40,7 +46,9 @@ h1 {
 }
 
 .card-container {
-    width: 1024px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     background-color: rgba(254, 207, 7, 1);
@@ -53,7 +61,7 @@ h1 {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 50px;
-    border: 1px solid black;
+    border: 2px solid black;
     margin-bottom: 10px;
 }
 
@@ -63,7 +71,7 @@ h1 {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 50px;
-    border: 1px solid black;
+    border: 2px solid black;
     margin-bottom: 10px;
 }
 
@@ -73,7 +81,7 @@ h1 {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 50px;
-    border: 1px solid black;
+    border: 2px solid black;
     margin-bottom: 10px;
 }
 
@@ -84,58 +92,76 @@ h1 {
     padding-right: 20px;
     padding-top: 50px;
     margin-bottom: 40px;
-    border: 1px solid black;
+    border: 2px solid black;
 }
 
 .card1 {
-    width: 200px;
-    height: 200px;
-    background-color: black;
-    margin-bottom: 50px;
+    /*width: 200px;
+    height: 200px; had to change so it would flex properly*/
+    width: 100%;
+    height: auto;
+    /* background-color: black; had to comment out color so it would not change main background color when flexing */
+    /*margin-bottom: 50px; commented it out so it would fit the card better*/
+
 }
 
 .card2 {
-    width: 200px;
-    height: 200px;
-    background-color: black;
-    margin-bottom: 50px;
+    /*  width: 200px;
+    height: 200px; had to change so it would flex properly*/
+    width: 100%;
+    height: auto;
+    /* background-color: black; had to comment out color so it would not change main background color when flexing */
+    /* margin-bottom: 50px; commented it out so it would fit the card better */
 }
 
 .card3 {
-    width: 200px;
-    height: 200px;
-    background-color: black;
-    margin-bottom: 50px;
+    /*  width: 200px;
+    height: 200px; had to change so it would flex properly*/
+    width: 100%;
+    height: auto;
+    /* background-color: black; had to comment out color so it would not change main background color when flexing*/
+    /*margin-bottom: 50px; commented it out so it would fit the card better*/
 }
 
 .card4 {
-    width: 200px;
-    height: 200px;
-    background-color: black;
+    /* width: 200px;
+    height: 200px; had to change so it would flex properly*/
+    width: 100%;
+    height: auto;
+    /*  background-color: black; had to comment out color so it would not change main background color when flexing */
 }
 
 .card1-text {
-    width: 750px;
-    height: 200px;
+    /* width: 750px;
+    height: 200px; had to comment out was causing overflow issues */
+    width: 100%;
+    height: auto;
 }
 
 .card2-text {
-    width: 750px;
-    height: 200px;
+    /* width: 750px;
+    height: 200px;  had to comment out was causing overflow issues*/
+    width: 100%;
+    height: auto;
 }
 
 .card3-text {
-    width: 750px;
-    height: 200px;
+    /* width: 750px;
+    height: 200px; had to comment out was causing overflow issues*/
+    width: 100%;
+    height: auto;
 }
 
 .card4-text {
-    width: 750px;
-    height: 200px;
+    /* width: 750px;
+    height: 200px;  had to comment out was causing overflow issues*/
+    width: 100%;
+    height: auto;
 }
 
 p {
-    font-size: 20px;
+    flex-wrap: wrap;
+    font-size: 23px;
 }
 
 span {
@@ -145,6 +171,7 @@ span {
 img {
     width: 100%;
     height: auto;
+
 }
 
 /* Our Names Text Decoration */
@@ -152,21 +179,29 @@ img {
 #bmintro {
     text-decoration: underline;
     cursor: pointer;
+    font-size: 25px;
+    color: blue;
 }
 
 #dmintro {
     text-decoration: underline;
     cursor: pointer;
+    font-size: 25px;
+    color: blue;
 }
 
 #rdintro {
     text-decoration: underline;
     cursor: pointer;
+    font-size: 25px;
+    color: blue;
 }
 
 #trintro {
     text-decoration: underline;
     cursor: pointer;
+    font-size: 25px;
+    color: blue;
 }
 
 /* Footer Section */
@@ -220,8 +255,16 @@ footer {
     color: rgba(254, 207, 7, 1);
 }
 
+
 @media (max-width: 800px) {
-    a {
+    .card-container {
+        font-size: max(20px, 3vw);
+    }
+}
+
+@media (max-width: 800px) {
+    .head-container {
+        text-align: left;
         font-size: max(20px, 3vw);
     }
 }
