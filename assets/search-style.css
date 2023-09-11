@@ -1,0 +1,126 @@
+body {
+    background-color: rgba(254, 207, 7, 1);
+}
+
+.head-container {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+header {
+    width: 1024px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbutton {
+    padding: 11px 25px;
+    font-family: 'Playfair Display', serif;
+    display: inline-block;
+    position: relative;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+#home-btn-clr {
+    color: black;
+}
+
+#about-btn-clr {
+    color: black;
+}
+
+main {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#searchimg {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-container {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#foodSearch {
+    padding: 12px 20px;
+    margin: 20px 0;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: solid black;
+    width: 90%;
+    background-color: white;
+}
+
+/* Footer Section */
+
+.footer-social a {
+    color: rgba(254, 207, 7, 1);
+}
+
+#footer-heading {
+    color: rgba(254, 207, 7, 1);
+    font-size: 20px;
+}
+
+.footer-bottom {
+    color: rgba(254, 207, 7, 1);
+    font-size: 20px;
+}
+
+footer {
+    padding-top: 40px;
+    background-color: black;
+    min-height: 200px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    color: rgba(254, 207, 7, 1);
+}
+
+.fa-twitter {
+    color: rgba(254, 207, 7, 1);
+}
+
+.fa-instagram {
+    color: rgba(254, 207, 7, 1);
+}
+
+@media (max-width: 800px) {
+    a {
+        font-size: max(20px, 3vw);
+    }
+}

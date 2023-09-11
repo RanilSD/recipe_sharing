@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-color: rgba(254, 207, 7, 1);
+}
+
+.head-container {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+header {
+    width: 1024px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbutton {
+    padding: 11px 25px;
+    font-family: 'Playfair Display', serif;
+    display: inline-block;
+    position: relative;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+
+h1 {
+    color: black;
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(254, 207, 7, 1);
+    padding-top: 50px;
+}
+
+.card1-whole {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+
+.card2-whole {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+
+.card3-whole {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+
+.card4-whole {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    margin-bottom: 40px;
+    border: 2px solid black;
+}
+
+.card1 {
+    /*width: 200px;
+    height: 200px; had to change so it would flex properly*/
+    width: 100%;
+    height: auto;
+    /* background-color: black; had to comment out color so it would not change main background color when flexing */
+    /*margin-bottom: 50px; commented it out so it would fit the card better*/
+
+}
+
+.card2 {
+    /*  width: 200px;
+    height: 200px; had to change so it would flex properly*/
+    width: 100%;
+    height: auto;
+    /* background-color: black; had to comment out color so it would not change main background color when flexing */
+    /* margin-bottom: 50px; commented it out so it would fit the card better */
+}
+
+.card3 {
+    /*  width: 200px;
+    height: 200px; had to change so it would flex properly*/
+    width: 100%;
+    height: auto;
+    /* background-color: black; had to comment out color so it would not change main background color when flexing*/
+    /*margin-bottom: 50px; commented it out so it would fit the card better*/
+}
+
+.card4 {
+    /* width: 200px;
+    height: 200px; had to change so it would flex properly*/
+    width: 100%;
+    height: auto;
+    /*  background-color: black; had to comment out color so it would not change main background color when flexing */
+}
+
+.card1-text {
+    /* width: 750px;
+    height: 200px; had to comment out was causing overflow issues */
+    width: 100%;
+    height: auto;
+}
+
+.card2-text {
+    /* width: 750px;
+    height: 200px;  had to comment out was causing overflow issues*/
+    width: 100%;
+    height: auto;
+}
+
+.card3-text {
+    /* width: 750px;
+    height: 200px; had to comment out was causing overflow issues*/
+    width: 100%;
+    height: auto;
+}
+
+.card4-text {
+    /* width: 750px;
+    height: 200px;  had to comment out was causing overflow issues*/
+    width: 100%;
+    height: auto;
+}
+
+p {
+    flex-wrap: wrap;
+    font-size: 23px;
+}
+
+span {
+    font-size: 30px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+
+}
+
+/* Our Names Text Decoration */
+
+#bmintro {
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 25px;
+    color: blue;
+}
+
+#dmintro {
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 25px;
+    color: blue;
+}
+
+#rdintro {
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 25px;
+    color: blue;
+}
+
+#trintro {
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 25px;
+    color: blue;
+}
+
+/* Footer Section */
+
+.footer-social a {
+    color: rgba(254, 207, 7, 1);
+}
+
+#footer-heading {
+    color: rgba(254, 207, 7, 1);
+    font-size: 20px;
+}
+
+.footer-bottom {
+    color: rgba(254, 207, 7, 1);
+    font-size: 20px;
+}
+
+footer {
+    padding-top: 40px;
+    background-color: black;
+    height: 200px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    color: rgba(254, 207, 7, 1);
+}
+
+.fa-twitter {
+    color: rgba(254, 207, 7, 1);
+}
+
+.fa-instagram {
+    color: rgba(254, 207, 7, 1);
+}
+
+
+@media (max-width: 800px) {
+    .card-container {
+        font-size: max(20px, 3vw);
+    }
+}
+
+@media (max-width: 800px) {
+    .head-container {
+        text-align: left;
+        font-size: max(20px, 3vw);
+    }
+}

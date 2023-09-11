@@ -9,6 +9,7 @@ body {
 
 
 
+
 .imageHolder{
         display: flex;
             justify-content: center;
@@ -30,25 +31,51 @@ header {
                 border-bottom: 1px solid lightgrey;
                 justify-content: center;
                 width: fit-content
+
+.container {
+    width: 1024px;
+    background-color: rgba(254, 207, 7, 1);
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+header {
+    width: 1024px;
+    height: 80px;
+    background-color: rgba(254, 207, 7, 1);
+    display: flex;
 }
 
 .navbutton {
+    margin-left: auto;
+    margin-right: auto;
     padding: 11px 25px;
     font-family: 'Playfair Display', serif;
-    display: inline-block;
-    position: relative;
 }
 
 a {
-    color: white;
+    color: black;
     text-decoration: none;
+}
+
+.basitImage {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 60px;
 }
 
 h1 {
     color: rgba(0, 0, 0, 1);
 }
 
-    /* Main Section */
+/* Main Section */
 
 main {
     min-height: 300px;
@@ -78,7 +105,7 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     width: 1024px;
-    gap:10px
+    gap: 10px
 }
 
 .container-grid div {
@@ -96,6 +123,17 @@ section {
     text-align: center;
 }
 
+
+/* external css: flickity.css */
+.carousel-cell {
+    width: 50%;
+    height: 200px;
+    margin-right: 10px;
+    background: gray;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+}
+
 /* just incase of conflict */
 .content-img {
     width: 100%;
@@ -109,7 +147,7 @@ section {
     grid-template: 20px 200px 200px/30% 70%;
     gap: 10px;
     width: fit-content;
-    height:400px;
+    height: 400px;
     background-color: white;
     margin: 5% auto;
     padding: 5%;
@@ -153,14 +191,13 @@ section {
 
 }
 
-
 #recipeSpan img {
     margin-left: 1%;
     position: relative;
     top: 30px;
     width: 40px;
     height: 40px;
-} 
+}
 
 .instructFull div {
     display: flex;
@@ -180,7 +217,6 @@ section {
 .escImg:hover {
     filter: brightness(50%);
 }
-
     /* No Merege Conflicts */
     /* external css: flickity.css */
     .carousel-cell {
@@ -504,5 +540,166 @@ height:200px;
             top: 200px;
             right:400px;
     }
+
+/* No Merege Conflicts */
+/* external css: flickity.css */
+.carousel-cell {
+    width: 50%;
+    height: 200px;
+    margin-right: 10px;
+    background: gray;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+}
+
+
+.container-grid {
+
+    display: grid;
+
+    grid-template: 200px 200px/200px 200px 200px 200px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    width: 1024px;
+
+}
+
+.fullscreen img {
+    width: 200px;
+    height: 200px;
+}
+
+/* Review Section */
+
+.reviews {
+    justify-content: space-between;
+    background-color: black;
+    border-bottom: 1px solid rgba(254, 207, 7, 1);
+}
+
+.testimonial-photo-section {
+    height: 600px;
+    width: 600px;
+    background-color: black;
+    display: inline-block;
+    position: relative;
+    margin-left: 200px;
+    padding-top: 30px;
+
+}
+
+.testimonial-text-section {
+    height: 300px;
+    min-width: 500px;
+    background-color: black;
+    display: inline-block;
+    position: relative;
+    margin-left: 100px;
+    bottom: 300px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.testimonial-text-section span {
+    font-size: 20px;
+    color: rgba(254, 207, 7, 1);
+}
+
+.testimonial-text-section p {
+    font-size: 15px;
+    color: white;
+}
+
+.reviews h2 {
+    color: rgba(254, 207, 7, 1);
+    text-align: center;
+    padding-top: 40px;
+    font-size: 50px;
+
+}
+
+/* Basic styling for the container and sliding div */
+.slide-container {
+    width: 400px;
+    min-height: 150px;
+    overflow: hidden;
+    /* Hide overflowing content */
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+}
+
+
+.sliding-div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.current {
+    transform: translateX(0);
+    /* Start with the first div visible */
+    display: block;
+}
+
+/* Footer Section */
+
+.footer-social a {
+    color: rgba(254, 207, 7, 1);
+}
+
+#footer-heading {
+    color: rgba(254, 207, 7, 1);
+    font-size: 20px;
+}
+
+.footer-bottom {
+    color: rgba(254, 207, 7, 1);
+    font-size: 20px;
+}
+
+footer {
+    padding-top: 40px;
+    background-color: black;
+    height: 200px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    color: rgba(254, 207, 7, 1);
+
+}
+
+.fa-twitter {
+    color: rgba(254, 207, 7, 1);
+}
+
+.fa-instagram {
+    color: rgba(254, 207, 7, 1);
 
 }
