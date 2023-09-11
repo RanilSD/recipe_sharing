@@ -7,26 +7,29 @@ body {
     background-color: rgba(254, 207, 7, 1);
 }
 
-.container {
-    width: 1024px;
-    margin-right: auto;
-}
 
+
+.imageHolder{
+        display: flex;
+            justify-content: center;
+            align-items: center;
+}
 .basitImage {
-    margin-left: 25%;
+max-width: 100%;
 }
 
 header {
-    z-index: 1;
-    position: relative;
-    left:700px;
-    bottom: 600px;
-    display: flex;
-    align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid lightgrey;
-    justify-content: center;
+            z-index: 1;
+                position: absolute;
+                left: 40%;
+                top: 10%;
+                display: flex;
+                align-items: center;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                border-bottom: 1px solid lightgrey;
+                justify-content: center;
+                width: fit-content
 }
 
 .navbutton {
@@ -49,7 +52,6 @@ h1 {
 
 main {
     min-height: 300px;
-    display: flex;
     align-items: center;
     width: 1024px;
     margin-left: auto;
@@ -72,7 +74,7 @@ h2 {
 
 .container-grid {
     display: grid;
-    grid-template: 500px 500px/500px 500px 500px 500px;
+    grid-template: repeat(2, 500px)/repeat(4, 500px);
     margin-left: auto;
     margin-right: auto;
     width: 1024px;
@@ -93,16 +95,6 @@ section {
 .content {
     text-align: center;
 }
-/* external css: flickity.css */
-.carousel-cell {
-    width: 50%;
-    height: 200px;
-    margin-right: 10px;
-    background: gray;
-    border-radius: 5px;
-    counter-increment: carousel-cell;
-}
-
 
 /* just incase of conflict */
 .content-img {
@@ -142,7 +134,7 @@ section {
     width: fit-content;
     height: fit-content;
     position: relative;
-    bottom: 50px;
+    bottom: 20px;
 }
 
 .fullscreen a:hover {
@@ -344,3 +336,173 @@ height:200px;
     .fa-instagram {
         color: black;
     }
+
+    /* media queries */
+
+@media only screen and (max-width:991px) and (min-width:768px) {
+    /* tablet */
+    * {
+            font-size: 16px
+        }
+    
+        h1 {
+            font-size: 1.5rem;
+        }
+    
+        h2 {
+            font-size: 1.25rem;
+        }
+    
+        /* .basitImage {
+            margin-left:.5%;
+            width:900px;
+            height: 400px;
+        } */
+    
+        header {
+            z-index: 1;
+            position: relative;
+            left: 260px;
+            bottom: 350px;
+            display: flex;
+            align-items: center;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            border-bottom: 1px solid lightgrey;
+            justify-content: center;
+            width: fit-content
+        }
+    
+        .container {
+            width: 767px;
+            margin-right: auto;
+        }
+    
+        .herobox1 {
+            margin-left: 10%;
+        }
+    
+        .herobox1 p,
+        .herobox1 h1 {
+            width: 65%;
+            margin-left: 0%;
+        }
+    
+        .popularFood {
+            text-align: center;
+            margin-top: 100px;
+        }
+                        .title h2{
+                            margin-right:20%
+                        }
+        .content {
+            margin-left: 0px;
+        }
+    
+        .container-grid {
+            display: grid;
+            grid-template: repeat(4, 300px)/repeat(2, 300px);
+            gap: 10px;
+            margin-left: 10%;
+        }
+    
+        .reviews {
+            display: flex;
+            justify-content: center;
+            background-color: none;
+            margin-left: 1%
+        }
+    
+        .testimonial-text-section {
+            height: fit-content;
+            width: fit-content;
+            background-color: none;
+            display: block;
+            position: static;
+            margin-left: 0px;
+            padding-bottom: 0px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            position: relative;
+            top: 200px;
+            right: 400px;
+        }
+}
+
+
+@media only screen and (max-width: 767px) {
+    /* phone  */
+    *{
+        font-size:16px
+    }
+    h1{
+        font-size:1.5rem;
+    }
+     h2 {
+        font-size: 1.25rem;
+        }
+
+    /* .basitImage{
+        margin-left: 5%;
+        width:650px;
+        height:400px;
+    } */
+        header {
+            z-index: 1;
+            position: relative;
+            left: 200px;
+            bottom:350px;
+            display: flex;
+            align-items: center;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            border-bottom: 1px solid lightgrey;
+            justify-content: center;
+            width:fit-content
+        }
+        .container {
+            width: 767px;
+            margin-right: auto;
+        }
+
+        .herobox1  {
+        margin-left:10%;
+                }
+
+        .herobox1 p,.herobox1 h1{
+                width: 65%;
+                margin-left:0%;
+        }
+        .popularFood{
+        margin-top:100px;
+        }
+        .content {
+            margin-left:0px;
+      }
+          .container-grid {
+              display: grid;
+    grid-template: repeat(4, 300px)/repeat(1,300px);
+              gap: 10px;
+              margin-left:30%;
+          }
+                  .reviews {
+                    display:flex;
+                      justify-content: center;
+                      background-color:none;
+                      margin-left:1%
+                  }
+        
+        .testimonial-text-section {
+        height:fit-content;
+        width:fit-content;
+        background-color:none;
+        display:block;
+        position:static;
+        margin-left: 0px;
+        padding-bottom: 0px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        position: relative;
+            top: 200px;
+            right:400px;
+    }
+
+}
