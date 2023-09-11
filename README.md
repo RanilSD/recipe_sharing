@@ -3,7 +3,7 @@
 Project was designed to help use use the skills we have learned so far in js, css, json, html, Also got to learn how it would be to work in a team.
 
 ## website
-http://127.0.0.1:5501/index.html# 
+https://ranilsd.github.io/recipe_sharing/
 
 ## Team Members 
 1. Tomas Rullan
