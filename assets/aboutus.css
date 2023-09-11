@@ -219,3 +219,9 @@ footer {
 .fa-instagram {
     color: rgba(254, 207, 7, 1);
 }
+
+@media (max-width: 800px) {
+    a {
+        font-size: max(20px, 3vw);
+    }
+}
