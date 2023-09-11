@@ -9,35 +9,11 @@ body {
 
 
 
-
-.imageHolder{
-        display: flex;
-            justify-content: center;
-            align-items: center;
-}
-.basitImage {
-max-width: 100%;
-}
-
-header {
-            z-index: 1;
-                position: absolute;
-                left: 40%;
-                top: 10%;
-                display: flex;
-                align-items: center;
-                padding-top: 0px;
-                padding-bottom: 0px;
-                border-bottom: 1px solid lightgrey;
-                justify-content: center;
-                width: fit-content
-}
 .container {
     width: 1024px;
     background-color: rgba(254, 207, 7, 1);
     margin-left: auto;
     margin-right: auto;
-    border-bottom: 1px solid black;
     margin-bottom: 30px;
     padding-top: 20px;
 }
@@ -45,11 +21,12 @@ header {
 header {
     width: 1024px;
     height: 80px;
+    background-color: rgba(254, 207, 7, 1);
     display: flex;
+        border-bottom: 1px solid black;
 }
 
 .navbutton {
-
     margin-left: auto;
     margin-right: auto;
     padding: 11px 25px;
@@ -57,7 +34,7 @@ header {
 }
 
 a {
-        color: white;
+    color: black;
     text-decoration: none;
 }
 
@@ -70,6 +47,7 @@ a {
     display: flex;
     padding-bottom: 60px;
 }
+
 
 h1 {
     color: rgba(0, 0, 0, 1);
@@ -390,31 +368,6 @@ height:200px;
         font-size: 1.25rem;
     }
 
-    /* .basitImage {
-            margin-left:.5%;
-            width:900px;
-            height: 400px;
-        } */
-
-header {
-    z-index: 1;
-    position: absolute;
-    left: 40%;
-    top: 10%;
-    display: flex;
-    align-items: center;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    border-bottom: 1px solid lightgrey;
-    justify-content: center;
-    width: fit-content
-}
-
-    .container {
-        width: 767px;
-        margin-right: auto;
-    }
-
     .herobox1 {
         margin-left: 10%;
     }
@@ -465,6 +418,19 @@ header {
         top: 200px;
         right: 400px;
     }
+                        .basitImage {
+                            width: 850px;
+                            margin-left: 4%;
+                            align-items: center;
+                            justify-content: center;
+                            display: flex;
+                            padding-bottom: 60px;
+                        }
+header {
+    width:850px;
+    margin-left:4%
+}
+
 }
 
 
@@ -483,29 +449,8 @@ header {
         font-size: 1.25rem;
     }
 
-    /* .basitImage{
-        margin-left: 5%;
-        width:650px;
-        height:400px;
-    } */
-    header {
-        z-index: 1;
-        position: relative;
-        left: 200px;
-        bottom: 350px;
-        display: flex;
-        align-items: center;
-        padding-top: 0px;
-        padding-bottom: 0px;
-        border-bottom: 1px solid lightgrey;
-        justify-content: center;
-        width: fit-content
-    }
 
-    .container {
-        width: 767px;
-        margin-right: auto;
-    }
+
 
     .herobox1 {
         margin-left: 10%;
@@ -552,5 +497,16 @@ header {
         top: 200px;
         right: 400px;
     }
-
+        .basitImage {
+            width: 600px;
+            margin-left:12%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            padding-bottom: 60px;
+        }
+                header {
+                    width: 600px;
+                    margin-left: 10%
+                }
 }
