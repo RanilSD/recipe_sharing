@@ -1,5 +1,7 @@
 
 # Recipe Sharing
+Project was designed to help use use the skills we have learned so far in js, css, json, html, Also got to learn how it would be to work in a team.
+
 ## website
 http://127.0.0.1:5501/index.html# 
 
@@ -39,9 +41,8 @@ Js, Css, Json, Html
 ![feedback  (4)](https://github.com/RanilSD/recipe_sharing/assets/139053276/3cad99c8-8cb7-4d18-8b78-6ba471fd9181)
 ![about us (6)](https://github.com/RanilSD/recipe_sharing/assets/139053276/d6bd45d5-aea0-4ad6-8bb3-fef0a6e877d2)
 ![search food (7)](https://github.com/RanilSD/recipe_sharing/assets/139053276/b86d3956-a624-4bec-a086-23da35719077)
-# recipe_sharing
 
-Project was designed to help use use the skills we have learned so far in js, css, json, html, Also got to learn how it would be to work in a team.
+
 
 
 
