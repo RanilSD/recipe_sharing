@@ -40,22 +40,31 @@ Js, Css, Json, Html
 1. [The MealDB](https://www.themealdb.com/)
 2. [Edamam](https://api.edamam.com/)
 ### FrameWork
-
+1. [Materialize](https://materializecss.com/)
 ### App Images
-![welcome screen (1)](https://github.com/RanilSD/recipe_sharing/assets/139053276/4b4e0b9b-0cff-4166-b0c9-162fbf36278b)
-![intro (2)](https://github.com/RanilSD/recipe_sharing/assets/139053276/6802fd43-9f01-4fc9-a836-55bc3584b87e)
-![popular category (3)](https://github.com/RanilSD/recipe_sharing/assets/139053276/cb51efe8-97fa-47bf-b869-413d2a85ad70)
-![feedback  (4)](https://github.com/RanilSD/recipe_sharing/assets/139053276/3cad99c8-8cb7-4d18-8b78-6ba471fd9181)
-![about us (6)](https://github.com/RanilSD/recipe_sharing/assets/139053276/d6bd45d5-aea0-4ad6-8bb3-fef0a6e877d2)
-![search food (7)](https://github.com/RanilSD/recipe_sharing/assets/139053276/b86d3956-a624-4bec-a086-23da35719077)
+#### Home Page
+Desktop
+![](appImages/SCR-20230911-olgy.png)
+ ![](appImages/SCR-20230911-oljj.png)
+![](appImages/SCR-20230911-oprv.png)
+![](appImages/SCR-20230911-opvq.png)
+![](appImages/SCR-20230911-olvj.png)
+![](appImages/SCR-20230911-oloo.png)
+##### Tablet
+![](appImages/SCR-20230911-opok.png)
+##### Phone
+![](appImages/SCR-20230911-oqaq.png)
+#### Search Page
+Desktop
+![](appImages/SCR-20230911-omcw.png)
+![](appImages/SCR-20230911-omen.png)
+![](appImages/SCR-20230911-omgl.png)
+![](appImages/SCR-20230911-omky.png)
+##### Tablet and Phone 
+![](appImages/SCR-20230911-oovr.png)
+#### About Us Page
+Desktop
+![](appImages/Screenshot%202023-09-11%20at%204.29.10%20PM.png)
+##### Tablet and Phone 
 
-
-
-
-
-
-
-
-
-
-
+![](appImages/SCR-20230911-opbw.png)
