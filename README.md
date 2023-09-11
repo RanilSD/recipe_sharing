@@ -12,17 +12,24 @@ http://127.0.0.1:5501/index.html#
 4. Damion Morgan 
    
 ## UserStory
-### As a user i want a webpage that i can use to  find new recipes, and look at the  most popular ones 
+### As a user I want a webpage that I can use to  find new recipes, and look at the  most popular ones 
 
 - Given a webpage meets accessibility standards.
-- When i look at the webpage
-- Then i see recipes in three different categories 
-- When i click one category i see popular recipes 
-- Then i can see the best form what people think
-- When i go into the next categorie 
-- Then i see what people say are the best 
-- When i go into recipes categorie 
-- Then i see all categories 
+- When I look at the webpage
+- Then I see recipes in three different categories 
+- When I click one category i see popular recipes 
+- Then I can see the best form what people think
+- When I go into the next categorie 
+- Then I see what people say are the best 
+- When I go into recipes categorie 
+- Then I see all categories 
+
+## How to use
+- Click on any of the random recipe pictures on the main page to look at the info
+- Click the about us to see information about the creators
+- Click the search nav bar to go to a search page and search recipes
+- Once in the search page just type a food item or recipe and click enter and click a recipe to bring you to the recipe page
+
   
  ## Resources
  
