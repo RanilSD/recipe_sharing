@@ -3,10 +3,12 @@ body {
 }
 
 .head-container {
-    width: 1024px;
+    width: 100%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    object-fit: cover;
 }
 
 header {
@@ -28,7 +30,7 @@ header {
 a {
     color: black;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 23px;
 }
 
 
@@ -41,19 +43,22 @@ a {
 }
 
 main {
-    width: 1024px;
+    width: 100%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
 }
 
 #searchimg {
-    width: 1024px;
+    width: 100%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
 }
 
 .search-container {
-    width: 1024px;
+    width: 100%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
 }
@@ -120,7 +125,8 @@ footer {
 }
 
 @media (max-width: 800px) {
-    a {
+    .head-container {
+        text-align: left;
         font-size: max(20px, 3vw);
     }
 }
