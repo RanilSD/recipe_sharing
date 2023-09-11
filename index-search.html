@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Food</title>
+    <link rel="stylesheet" href="./assets/search-style.css">
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/assets/aboutus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">       
+</head>
+<body> 
+
+            <!-- Nav Buttons & Search bar  -->
+            <header>
+                <div class="head-container">
+                        
+                            <div class="navbutton">
+                                <a id="home-btn-clr" href="index.html">Home</a>
+                            </div>
+                
+                            <div class="navbutton">
+                                <a id="about-btn-clr" href="aboutus.html">About Us</a>
+                            </div>
+                        
+                </div>    
+            </header> 
+
+
+            <main>
+                <img id="searchimg" src="./images/Search-Main-Photo.png" alt="Main Search Page Image">
+
+                <div onload='typeWriter()' class="search-container">
+                    <h3>Discover a world of delicious flavors with our food search feature.</h3>
+                    <form>
+                        <input type="text" class="form-control" id="foodSearch" placeholder="Search any Food!!!">
+                    </form>
+                    <p id="intro-text"></p>
+                    <div class="search"></div>
+                    </div>
+            </main>
+
+            <!-- Footer Sec -->
+
+            <footer>
+                <h4 id="footer-heading">FOLLOW US</h4>
+                <div class="footer-social">
+                    <a href="#" target="_blank" class="fa fa-facebook"></a>
+                    <a href="#" target="_blank" class="fa fa-twitter"></a>
+                    <a href="#" target="_blank" class="fa fa-instagram"></a>
+                    <br>
+                    <br>
+                </div>
+        
+                <div class="footer-bottom">
+                    All rights reserved - Copyright 2023©
+        
+                </div>
+        
+            </footer>        
+
+
+    <script src="./assets/script-search.js"></script>
+</body>
+</html>
