@@ -7,12 +7,13 @@ body {
     background-color: rgba(254, 207, 7, 1);
 }
 
+
+
 .container {
     width: 1024px;
     background-color: rgba(254, 207, 7, 1);
     margin-left: auto;
     margin-right: auto;
-    border-bottom: 1px solid black;
     margin-bottom: 30px;
     padding-top: 20px;
 }
@@ -22,6 +23,7 @@ header {
     height: 80px;
     background-color: rgba(254, 207, 7, 1);
     display: flex;
+        border-bottom: 1px solid black;
 }
 
 .navbutton {
@@ -46,6 +48,7 @@ a {
     padding-bottom: 60px;
 }
 
+
 h1 {
     color: rgba(0, 0, 0, 1);
 }
@@ -54,7 +57,6 @@ h1 {
 
 main {
     min-height: 300px;
-    display: flex;
     align-items: center;
     width: 1024px;
     margin-left: auto;
@@ -77,7 +79,7 @@ h2 {
 
 .container-grid {
     display: grid;
-    grid-template: 500px 500px/500px 500px 500px 500px;
+    grid-template: repeat(2, 500px)/repeat(4, 500px);
     margin-left: auto;
     margin-right: auto;
     width: 1024px;
@@ -98,6 +100,7 @@ section {
 .content {
     text-align: center;
 }
+
 
 /* external css: flickity.css */
 .carousel-cell {
@@ -147,7 +150,7 @@ section {
     width: fit-content;
     height: fit-content;
     position: relative;
-    bottom: 50px;
+    bottom: 20px;
 }
 
 .fullscreen a:hover {
@@ -192,165 +195,318 @@ section {
 .escImg:hover {
     filter: brightness(50%);
 }
+    /* No Merege Conflicts */
+    /* external css: flickity.css */
+    .carousel-cell {
+        width: 50%;
+        height: 200px;
+        margin-right: 10px;
+        background: gray;
+        border-radius: 5px;
+        counter-increment: carousel-cell;
+    }
 
-/* No Merege Conflicts */
-/* external css: flickity.css */
-.carousel-cell {
-    width: 50%;
-    height: 200px;
-    margin-right: 10px;
-    background: gray;
-    border-radius: 5px;
-    counter-increment: carousel-cell;
+
+    .container-grid {
+
+        display: grid;
+
+        grid-template: 200px 200px/200px 200px 200px 200px;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+        width: 1024px;
+
+    }
+                
+.fullscreen img{
+width:200px;
+height:200px;
+}
+
+    /* Review Section */
+
+    .reviews {
+        justify-content: space-between;
+        background-color: black;
+    }
+
+    .testimonial-photo-section {
+        height: 600px;
+        width: 600px;
+        background-color: black;
+        display: inline-block;
+        position: relative;
+        margin-left: 200px;
+        padding-top: 30px;
+
+    }
+
+    .testimonial-text-section {
+        height: 300px;
+        min-width: 500px;
+        background-color: black;
+        display: inline-block;
+        position: relative;
+        margin-left: 100px;
+        bottom: 300px;
+        padding-bottom: 100px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .testimonial-text-section span {
+        font-size: 20px;
+        color: rgba(254, 207, 7, 1);
+    }
+
+    .testimonial-text-section p {
+        font-size: 15px;
+        color: white;
+    }
+
+    .reviews h2 {
+        color: rgba(254, 207, 7, 1);
+        text-align: center;
+        padding-top: 40px;
+        font-size: 50px;
+
+    }
+
+    /* Basic styling for the container and sliding div */
+    .slide-container {
+        width: 400px;
+        min-height: 150px;
+        overflow: hidden;
+        /* Hide overflowing content */
+        position: relative;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 50px;
+    }
+
+
+    .sliding-div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+
+    .current {
+        transform: translateX(0);
+        /* Start with the first div visible */
+        display: block;
+    }
+
+    /* Footer Section */
+
+    .footer-social a {
+        color: black;
+    }
+
+    #footer-heading {
+        color: black;
+    }
+
+    .footer-bottom {
+        color: black;
+    }
+
+    footer {
+        padding-top: 40px;
+        background-color: rgba(254, 207, 7, 1);
+        height: 200px;
+        text-align: center;
+    }
+
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 20px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    .fa-facebook {
+        color: black;
+    }
+
+    .fa-twitter {
+        color: black;
+    }
+
+    .fa-instagram {
+        color: black;
+    }
+
+    /* media queries */
+
+@media only screen and (max-width:991px) and (min-width:768px) {
+
+    /* tablet */
+    * {
+        font-size: 16px
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    .herobox1 {
+        margin-left: 10%;
+    }
+
+    .herobox1 p,
+    .herobox1 h1 {
+        width: 65%;
+        margin-left: 0%;
+    }
+
+    .popularFood {
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .title h2 {
+        margin-right: 20%
+    }
+
+    .content {
+        margin-left: 0px;
+    }
+
+    .container-grid {
+        display: grid;
+        grid-template: repeat(4, 300px)/repeat(2, 300px);
+        gap: 10px;
+        margin-left: 10%;
+    }
+
+    .reviews {
+        display: flex;
+        justify-content: center;
+        background-color: none;
+        margin-left: 1%
+    }
+
+    .testimonial-text-section {
+        height: fit-content;
+        width: fit-content;
+        background-color: none;
+        display: block;
+        position: static;
+        margin-left: 0px;
+        padding-bottom: 0px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        position: relative;
+        top: 200px;
+        right: 400px;
+    }
+                        .basitImage {
+                            width: 850px;
+                            margin-left: 4%;
+                            align-items: center;
+                            justify-content: center;
+                            display: flex;
+                            padding-bottom: 60px;
+                        }
+header {
+    width:850px;
+    margin-left:4%
+}
+
 }
 
 
-.container-grid {
+@media only screen and (max-width: 767px) {
 
-    display: grid;
+    /* phone  */
+    * {
+        font-size: 16px
+    }
 
-    grid-template: 200px 200px/200px 200px 200px 200px;
+    h1 {
+        font-size: 1.5rem;
+    }
 
-    margin-left: auto;
-
-    margin-right: auto;
-
-    width: 1024px;
-
-}
-
-.fullscreen img {
-    width: 200px;
-    height: 200px;
-}
-
-/* Review Section */
-
-.reviews {
-    justify-content: space-between;
-    background-color: black;
-    border-bottom: 1px solid rgba(254, 207, 7, 1);
-}
-
-.testimonial-photo-section {
-    height: 600px;
-    width: 600px;
-    background-color: black;
-    display: inline-block;
-    position: relative;
-    margin-left: 200px;
-    padding-top: 30px;
-
-}
-
-.testimonial-text-section {
-    height: 300px;
-    min-width: 500px;
-    background-color: black;
-    display: inline-block;
-    position: relative;
-    margin-left: 100px;
-    bottom: 300px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.testimonial-text-section span {
-    font-size: 20px;
-    color: rgba(254, 207, 7, 1);
-}
-
-.testimonial-text-section p {
-    font-size: 15px;
-    color: white;
-}
-
-.reviews h2 {
-    color: rgba(254, 207, 7, 1);
-    text-align: center;
-    padding-top: 40px;
-    font-size: 50px;
-
-}
-
-/* Basic styling for the container and sliding div */
-.slide-container {
-    width: 400px;
-    min-height: 150px;
-    overflow: hidden;
-    /* Hide overflowing content */
-    position: relative;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 50px;
-}
+    h2 {
+        font-size: 1.25rem;
+    }
 
 
-.sliding-div {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
-}
 
-.current {
-    transform: translateX(0);
-    /* Start with the first div visible */
-    display: block;
-}
 
-/* Footer Section */
+    .herobox1 {
+        margin-left: 10%;
+    }
 
-.footer-social a {
-    color: rgba(254, 207, 7, 1);
-}
+    .herobox1 p,
+    .herobox1 h1 {
+        width: 65%;
+        margin-left: 0%;
+    }
 
-#footer-heading {
-    color: rgba(254, 207, 7, 1);
-    font-size: 20px;
-}
+    .popularFood {
+        margin-top: 100px;
+    }
 
-.footer-bottom {
-    color: rgba(254, 207, 7, 1);
-    font-size: 20px;
-}
+    .content {
+        margin-left: 0px;
+    }
 
-footer {
-    padding-top: 40px;
-    background-color: black;
-    height: 200px;
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
-    padding-bottom: 20px;
-}
+    .container-grid {
+        display: grid;
+        grid-template: repeat(4, 300px)/repeat(1, 300px);
+        gap: 10px;
+        margin-left: 30%;
+    }
 
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 20px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-}
+    .reviews {
+        display: flex;
+        justify-content: center;
+        background-color: none;
+        margin-left: 1%
+    }
 
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-    color: rgba(254, 207, 7, 1);
-
-}
-
-.fa-twitter {
-    color: rgba(254, 207, 7, 1);
-}
-
-.fa-instagram {
-    color: rgba(254, 207, 7, 1);
+    .testimonial-text-section {
+        height: fit-content;
+        width: fit-content;
+        background-color: none;
+        display: block;
+        position: static;
+        margin-left: 0px;
+        padding-bottom: 0px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        position: relative;
+        top: 200px;
+        right: 400px;
+    }
+        .basitImage {
+            width: 600px;
+            margin-left:12%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            padding-bottom: 60px;
+        }
+                header {
+                    width: 600px;
+                    margin-left: 10%
+                }
 }
