@@ -1,0 +1,221 @@
+body {
+    background-color: rgba(254, 207, 7, 1);
+}
+
+.head-container {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+header {
+    width: 1024px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbutton {
+    padding: 11px 25px;
+    font-family: 'Playfair Display', serif;
+    display: inline-block;
+    position: relative;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+h1 {
+    color: black;
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.card-container {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(254, 207, 7, 1);
+    padding-top: 50px;
+}
+
+.card1-whole {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.card2-whole {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.card3-whole {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.card4-whole {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    margin-bottom: 40px;
+    border: 1px solid black;
+}
+
+.card1 {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    margin-bottom: 50px;
+}
+
+.card2 {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    margin-bottom: 50px;
+}
+
+.card3 {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    margin-bottom: 50px;
+}
+
+.card4 {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+}
+
+.card1-text {
+    width: 750px;
+    height: 200px;
+}
+
+.card2-text {
+    width: 750px;
+    height: 200px;
+}
+
+.card3-text {
+    width: 750px;
+    height: 200px;
+}
+
+.card4-text {
+    width: 750px;
+    height: 200px;
+}
+
+p {
+    font-size: 20px;
+}
+
+span {
+    font-size: 30px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+/* Our Names Text Decoration */
+
+#bmintro {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#dmintro {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#rdintro {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#trintro {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Footer Section */
+
+.footer-social a {
+    color: rgba(254, 207, 7, 1);
+}
+
+#footer-heading {
+    color: rgba(254, 207, 7, 1);
+    font-size: 20px;
+}
+
+.footer-bottom {
+    color: rgba(254, 207, 7, 1);
+    font-size: 20px;
+}
+
+footer {
+    padding-top: 40px;
+    background-color: black;
+    height: 200px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    color: rgba(254, 207, 7, 1);
+}
+
+.fa-twitter {
+    color: rgba(254, 207, 7, 1);
+}
+
+.fa-instagram {
+    color: rgba(254, 207, 7, 1);
+}
